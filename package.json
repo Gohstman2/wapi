@@ -1,23 +1,30 @@
 {
-  "name": "whatsapp-pairing-server",
+  "name": "baileys-whatsapp-api",
   "version": "1.0.0",
-  "description": "Serveur pour récupérer le code de pairing WhatsApp via Baileys",
-  "main": "index.js",
+  "description": "Complete WhatsApp API using Baileys, Node.js, Express, Postgres, and Webhook integration",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "keywords": ["whatsapp", "baileys", "express", "pairing"],
-  "author": "TonNom",
-  "license": "MIT",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.7.18",
-    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
     "express": "^4.18.2",
-    "pino": "^8.16.0"
+    "node-fetch": "^3.3.2",
+    "pino": "^8.15.0",
+    "pg": "^8.11.2",
+    "qrcode": "^1.5.1"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
-  }
+    "nodemon": "^3.0.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["whatsapp", "baileys", "api", "express", "webhook", "render"],
+  "author": "Your Name",
+  "license": "MIT"
 }
