@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
-import makeWASocket, { useSingleFileAuthState, Browsers } from "@whiskeysockets/baileys";
+import pkg from "@whiskeysockets/baileys";
+const { default: makeWASocket, useSingleFileAuthState, Browsers } = pkg;
 import P from "pino";
 
 dotenv.config();
